@@ -53,6 +53,7 @@ $(document).ready(function() {
                 if (price && price > 0) {
                     // Show  paragraph text
                     $('#li-29').show();
+                    debugger;    
                     $('#li-29')[0].innerText = "Subtotal: $" + price;
                 } else {
                     $('#li-29').hide();
