@@ -1,4 +1,6 @@
-    $(document).ready(function() {
+console.log('test');    
+
+$(document).ready(function() {
         let paymentType = $('#element_26');
         let serviceType = $('#element_27');
         let numOfCans = $('#element_28');
