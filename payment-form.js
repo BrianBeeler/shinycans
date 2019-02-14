@@ -1,4 +1,4 @@
-console.log('test');    
+
 
 $(document).ready(function() {
         let paymentType = $('#element_26')[0];     
@@ -9,6 +9,7 @@ $(document).ready(function() {
         serviceType.onselect = setSubtotal;
         numOfCans.onselect = setSubtotal;
         
+        console.log('numOFCans',numOfCans);    
         
         function setSubtotal() {
 
