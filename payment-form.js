@@ -49,9 +49,11 @@ $(document).ready(function() {
                 } else if (paymentType[0].value == '1') {
                     price *= 12;
                 }
-
+                    
+                console.log($('#li_29').children[0]);        
+                    
                 // Show Subtitle
-                $('#li_29').children[0].innerText = "Subtotal: " + price;
+                $('#li_29').children[0].innerText = "Subtotal: " + price.toFixed(2);
             }
         }
     });
