@@ -7,6 +7,10 @@
         serviceType.onselect = setSubtotal;
         numOfCans.onselect = setSubtotal;
 
+        
+        console.log('payment type', paymentType);
+        
+        
         function setSubtotal() {
 
             console.log('set subtotal called');
