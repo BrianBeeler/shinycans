@@ -57,7 +57,9 @@ $(document).ready(function() {
                 } else {
                     $('#li_29').hide();
                 }
-            }
+            } else {
+                $('#li_29').hide();            
+            }    
         }
     });
 
