@@ -9,7 +9,7 @@ $(document).ready(function() {
         serviceType.change(setSubtotal);
         numOfCans.change(setSubtotal);
         
-        console.log('numOFCans2',numOfCans);    
+         $('#li_29').hide();
         
         function setSubtotal() {
 
@@ -25,7 +25,7 @@ $(document).ready(function() {
                 
 
                 
-            console.log('Updated');    
+
 
             if (paymentType[0].value && serviceType[0].value && numOfCans[0].value) {
                 if (serviceType[0].value == '1' && numOfCans[0].value == '1') {
@@ -52,11 +52,11 @@ $(document).ready(function() {
                     
                 if (price && price > 0) {
                     // Show  paragraph text
-                    $('#li-29').show();
+                    $('#li_29').show();
                     debugger;    
-                    $('#li-29')[0].innerText = "Subtotal: $" + price;
+                    $('#li_29')[0].innerText = "Subtotal: $" + price;
                 } else {
-                    $('#li-29').hide();
+                    $('#li_29').hide();
                 }
             }
         }
