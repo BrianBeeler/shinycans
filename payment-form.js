@@ -23,7 +23,7 @@ $(document).ready(function() {
 
             let price;
                 
-            debugger;
+
                 
             console.log('Updated');    
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
                     price *= 12;
                 }
                     
-                console.log($('#li_29').children[0]);        
+                debugger;        
                     
                 // Show Subtitle
                 $('#li_29').children[0].innerText = "Subtotal: " + price.toFixed(2);
