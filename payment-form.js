@@ -39,6 +39,8 @@
                 } else if (paymentType.value === 'Yearly') {
                     price *= 12;
                 }
+                
+                console.log('price', price);
 
                 // Show Subtitle
                 $('#li-29').children[0].innerText = "Subtotal: " + price;
