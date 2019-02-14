@@ -53,7 +53,7 @@ $(document).ready(function() {
                 debugger;        
                     
                 // Show Subtitle
-                $('#li_29').[0].innerText = "Subtotal: " + price.toFixed(2);
+                $('#li_29')[0].innerText = "Subtotal: " + price.toFixed(2);
             }
         }
     });
