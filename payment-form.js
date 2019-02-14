@@ -2,15 +2,15 @@ console.log('test');
 
 $(document).ready(function() {
         let paymentType = $('#element_26')[0];
-        let serviceType = $('#element_27')[0];
-        let numOfCans = $('#element_28')[0];
+        let serviceType = $('#element_27');
+        let numOfCans = $('#element_28');
 
         paymentType.onselect = setSubtotal;
         serviceType.onselect = setSubtotal;
         numOfCans.onselect = setSubtotal;
 
         
-        console.log('payment type', paymentType);
+        console.log('payment type', paymentType, serviceType, numOfCans);
         
         
         function setSubtotal() {
