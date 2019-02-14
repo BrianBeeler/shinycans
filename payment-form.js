@@ -1,11 +1,9 @@
 console.log('test');    
 
 $(document).ready(function() {
-//         let paymentType = $('#element_26') ? $('#element_26)[0];
-//         let serviceType = $('#element_27') ? $('#element_27)[0];
-//         let numOfCans = $('#element_28') ? $('#element_28)[0];                                    
-       
-        debugger;
+        let paymentType = $('#element_26') ? $('#element_26)[0];         
+        let serviceType = $('#element_27') ? $('#element_27)[0];
+        let numOfCans = $('#element_25') ? $('#element_28)[0];                                    
         
         paymentType.onselect = setSubtotal;
         serviceType.onselect = setSubtotal;
