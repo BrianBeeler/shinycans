@@ -47,7 +47,19 @@ $(document).ready(function() {
                 } else if (paymentType[0].value == '2') {
                     price *= 3;
                 } else if (paymentType[0].value == '1') {
-                    price *= 12;
+                    if (serviceType[0].value == '1' && numOfCans[0].value == '1') {
+                        price = 129.95;
+                    } else if (serviceType[0].value == '1' && numOfCans[0].value == '2') {
+                        price = 199.95;
+                    } else if (serviceType[0].value === '1' && numOfCans[0].value == '3') {
+                        price = 259.95;
+                    } else if (serviceType[0].value === '2' && numOfCans[0].value === '1') {
+                        price = 149.95;
+                    } else if (serviceType[0].value === '2' && numOfCans[0].value === '2') {
+                        price = 229.95;
+                    } else if (serviceType[0].value === '2' && numOfCans[0].value === '3') {
+                        price = 299.95;
+                    }
                 }
                     
                 if (price && price > 0) {
