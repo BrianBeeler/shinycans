@@ -50,10 +50,13 @@ $(document).ready(function() {
                     price *= 12;
                 }
                     
-                debugger;        
-                    
-                // Show Subtitle
-                $('#li_29')[0].innerText = "Subtotal: " + price.toFixed(2);
+                if (price && price > 0) {
+                    // Show  paragraph text
+                    $('#li-29').show();
+                    $('#li-29')[0].innerText = "Subtotal: $" + price;
+                } else {
+                    $('#li-29').hide();
+                }
             }
         }
     });
