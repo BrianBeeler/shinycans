@@ -12,8 +12,6 @@ $(document).ready(function() {
          $('#li_29').hide();
         
         function setSubtotal() {
-
-            console.log('set subtotal called');
             
             paymentType = $('#element_26');
             serviceType = $('#element_27');
@@ -22,10 +20,6 @@ $(document).ready(function() {
             // Calc Subtitle
 
             let price;
-                
-
-                
-
 
             if (paymentType[0].value && serviceType[0].value && numOfCans[0].value) {
                 if (serviceType[0].value == '1' && numOfCans[0].value == '1') {
