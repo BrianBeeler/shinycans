@@ -5,11 +5,11 @@ $(document).ready(function() {
         let serviceType = $('#element_27');
         let numOfCans = $('#element_30');                                
         
-        paymentType.change = setSubtotal;
-        serviceType.change = setSubtotal;
-        numOfCans.change = setSubtotal;
+        paymentType.change(setSubtotal);
+        serviceType.change(setSubtotal);
+        numOfCans.change(setSubtotal);
         
-        console.log('numOFCans',numOfCans);    
+        console.log('numOFCans2',numOfCans);    
         
         function setSubtotal() {
 
