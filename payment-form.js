@@ -1,9 +1,9 @@
 console.log('test');    
 
 $(document).ready(function() {
-        let paymentType = $('#element_26');
-        let serviceType = $('#element_27');
-        let numOfCans = $('#element_28');
+        let paymentType = $('#element_26')[0];
+        let serviceType = $('#element_27')[0];
+        let numOfCans = $('#element_28')[0];
 
         paymentType.onselect = setSubtotal;
         serviceType.onselect = setSubtotal;
@@ -17,9 +17,9 @@ $(document).ready(function() {
 
             console.log('set subtotal called');
             
-            paymentType = $('#element_26');
-            serviceType = $('#element_27');
-            numOfCans = $('#element_28');
+            paymentType = $('#element_26')[0];
+            serviceType = $('#element_27')[0];
+            numOfCans = $('#element_28')[0];
 
             // Calc Subtitle
 
