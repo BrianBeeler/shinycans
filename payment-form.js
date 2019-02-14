@@ -9,6 +9,8 @@
 
         function setSubtotal() {
 
+            console.log('set subtotal called');
+            
             paymentType = $('#element_26');
             serviceType = $('#element_27');
             numOfCans = $('#element_28');
