@@ -26,25 +26,25 @@ $(document).ready(function() {
             debugger;    
 
             if (paymentType[0].value && serviceType[0].value && numOfCans[0].value) {
-                if (serviceType[0].value === 'Cleaning' && numOfCans[0].value === '1') {
+                if (serviceType[0].value == '1' && numOfCans[0].value == '1') {
                     price = 11.95;
-                } else if (serviceType[0].value === 'Cleaning' && numOfCans[0].value === '2') {
+                } else if (serviceType[0].value == '1' && numOfCans[0].value == '2') {
                     price = 17.95;
-                } else if (serviceType[0].value === 'Cleaning' && numOfCans[0].value === '3') {
+                } else if (serviceType[0].value === '1' && numOfCans[0].value == '3') {
                     price = 23.95;
-                } else if (serviceType[0].value === 'VIP' && numOfCans[0].value === '1') {
+                } else if (serviceType[0].value === '2' && numOfCans[0].value === '1') {
                     price = 13.95;
-                } else if (serviceType[0].value === 'VIP' && numOfCans[0].value === '2') {
+                } else if (serviceType[0].value === '2' && numOfCans[0].value === '2') {
                     price = 20.95;
-                } else if (serviceType[0].value === 'VIP' && numOfCans[0].value === '3') {
+                } else if (serviceType[0].value === '2' && numOfCans[0].value === '3') {
                     price = 27.95;
                 }
 
-                if (paymentType[0].value === 'Monthly') {
+                if (paymentType[0].value == '3') {
                     // Do Nothing
-                } else if (paymentType[0].value === 'Quarterly') {
+                } else if (paymentType[0].value == '2') {
                     price *= 3;
-                } else if (paymentType[0].value === 'Yearly') {
+                } else if (paymentType[0].value == '1') {
                     price *= 12;
                 }
 
