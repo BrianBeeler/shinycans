@@ -22,6 +22,8 @@ $(document).ready(function() {
             // Calc Subtitle
 
             let price;
+                
+            debugger;    
 
             if (paymentType[0].value && serviceType[0].value && numOfCans[0].value) {
                 if (serviceType[0].value === 'Cleaning' && numOfCans[0].value === '1') {
@@ -47,7 +49,7 @@ $(document).ready(function() {
                 }
 
                 // Show Subtitle
-                $('#li-29').children[0].innerText = "Subtotal: " + price;
+                $('#li_29').children[0].innerText = "Subtotal: " + price;
             }
         }
     });
