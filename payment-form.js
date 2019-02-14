@@ -23,7 +23,9 @@ $(document).ready(function() {
 
             let price;
                 
-            debugger;    
+            debugger;
+                
+            console.log('Updated');    
 
             if (paymentType[0].value && serviceType[0].value && numOfCans[0].value) {
                 if (serviceType[0].value == '1' && numOfCans[0].value == '1') {
