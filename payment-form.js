@@ -52,8 +52,7 @@ $(document).ready(function() {
                     
                 if (price && price > 0) {
                     // Show  paragraph text
-                    $('#li_29').show();
-                    debugger;    
+                    $('#li_29').show(); 
                     $('#li_29')[0].innerText = "Subtotal: $" + price.toFixed(2);
                 } else {
                     $('#li_29').hide();
