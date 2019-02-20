@@ -9,8 +9,10 @@
         numOfCans.onselect = setSubtotal;
         
         // Hide the country select
+        console.log($('#element_4_6'));
         $('#element_4_6').hide();
-
+        setSubtotal();
+        
         function setSubtotal() {
 
             paymentType = $('#element_26');
@@ -45,7 +47,10 @@
                 }
 
                 // Show Subtitle
+                $('#li-29').show()
                 $('#li-29').children[0].innerText = "Subtotal: " + price;
+            } else {
+                $('#li-29').hide();   
             }
         }
     });
