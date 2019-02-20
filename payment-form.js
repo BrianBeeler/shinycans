@@ -7,6 +7,9 @@
         paymentType.onselect = setSubtotal;
         serviceType.onselect = setSubtotal;
         numOfCans.onselect = setSubtotal;
+        
+        // Hide the country select
+        $('element_4_6').hide();
 
         function setSubtotal() {
 
