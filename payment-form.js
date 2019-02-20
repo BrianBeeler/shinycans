@@ -10,6 +10,7 @@ $(document).ready(function() {
         numOfCans.change(setSubtotal);
         
          $('#li_29').hide();
+         $('#li_4_span_6').hide();
         
         function setSubtotal() {
             
