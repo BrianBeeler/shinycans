@@ -9,7 +9,7 @@
         numOfCans.onselect = setSubtotal;
         
         // Hide the country select
-        $('element_4_6').hide();
+        $('#element_4_6').hide();
 
         function setSubtotal() {
 
