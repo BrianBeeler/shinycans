@@ -10,7 +10,7 @@
         
         // Hide the country select
         console.log($('#element_4_6'));
-        $('#element_4_6').hide();
+        $('#li_4_span_6').hide();
         setSubtotal();
         
         function setSubtotal() {
