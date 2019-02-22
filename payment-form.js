@@ -20,7 +20,7 @@
             let price;
 
             if (paymentType.value && numOfCans.value) {
-                if (serviceType.value === 'Annual - 12 monthly cleanings' && numOfCans.value === '1') {
+                if (paymentType.value === 'Annual - 12 monthly cleanings' && numOfCans.value === '1') {
                     price = 129.99;
                 } else if (paymentType.value === '3 Month - 3 Monthly Cleanings' && numOfCans.value === '1') {
                     price = 35.97;
