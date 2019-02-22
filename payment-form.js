@@ -11,6 +11,17 @@ $(document).ready(function() {
          $('#li_29').hide();
          $('#li_4_span_6').hide();
         
+        $(document).on("submit", "form", function (e) {
+                debugger;
+                
+                var oForm = $(this);
+                var formId = oForm.attr("id");
+                var firstValue = oForm.find("input").first().val();
+                alert("Form '" + formId + " is being submitted, value of first input is: " + firstValue);
+                // Do stuff 
+                return false;
+         })
+        
         function setSubtotal() {
             
             paymentType = ($('#element_26') && $('#element_26')[0]) ? $('#element_26')[0] : {};
