@@ -24,23 +24,23 @@ $(document).ready(function() {
                     
                     debugger;
                     
-                if (paymentType.value === 'Annual - 12 monthly cleanings' && numOfCans.value === '1') {
+                if (paymentType[paymentType.value].label === 'Annual - 12 monthly cleanings' && numOfCans[numOfCans.value].label == '1') {
                     price = 129.99;
-                } else if (paymentType.value === '3 Month - 3 Monthly Cleanings' && numOfCans.value === '1') {
+                } else if (paymentType[paymentType.value].label . === '3 Month - 3 Monthly Cleanings' && numOfCans[numOfCans.value].label =='1') {
                     price = 35.97;
-                } else if (paymentType.value === 'Seasonal - 9 total cleanings: 3 spring, 3 summer, 3 fall' && numOfCans.value === '1') {
+                } else if (paymentType[paymentType.value].label === 'Seasonal - 9 total cleanings: 3 spring, 3 summer, 3 fall' && numOfCans[numOfCans.value].label =='1') {
                     price = 99.99;
-                } else if (paymentType.value === 'Annual - 12 monthly cleanings' && numOfCans.value === '2') {
+                } else if (paymentType[paymentType.value].label === 'Annual - 12 monthly cleanings' && numOfCans[numOfCans.value].label == '2') {
                     price = 199.99;
-                } else if (paymentType.value === '3 Month - 3 Monthly Cleanings' && numOfCans.value === '2') {
+                } else if (paymentType[paymentType.value].label === '3 Month - 3 Monthly Cleanings' && numOfCans[numOfCans.value].label == '2') {
                     price = 53.97;
-                } else if (paymentType.value === 'Seasonal - 9 total cleanings: 3 spring, 3 summer, 3 fall' && numOfCans.value === '2') {
+                } else if (paymentType[paymentType.value].label === 'Seasonal - 9 total cleanings: 3 spring, 3 summer, 3 fall' && numOfCans[numOfCans.value].label == '2') {
                     price = 149.99;
-                } else if (paymentType.value === 'Annual - 12 monthly cleanings' && numOfCans.value === '3') {
+                } else if (paymentType[paymentType.value].label === 'Annual - 12 monthly cleanings' && numOfCans[numOfCans.value].label == '3') {
                     price = 269.99;
-                } else if (paymentType.value === '3 Month - 3 Monthly Cleanings' && numOfCans.value === '3') {
+                } else if (paymentType[paymentType.value].label === '3 Month - 3 Monthly Cleanings' && numOfCans[numOfCans.value].label == '3') {
                     price = 71.97;
-                } else if (paymentType.value === 'Seasonal - 9 total cleanings: 3 spring, 3 summer, 3 fall' && numOfCans.value === '3') {
+                } else if (paymentType[paymentType.value].label === 'Seasonal - 9 total cleanings: 3 spring, 3 summer, 3 fall' && numOfCans[numOfCans.value].label =='3') {
                     price = 199.99;
                 }   
                 console.log('before if price, price');    
