@@ -27,7 +27,7 @@ $(document).ready(function() {
                     price = 99.99;
                 } else if (paymentType[paymentType.value - 1].label === 'Annual - 12 monthly cleanings' && numOfCans.value == '1') {
                     price = 199.99;
-                } else if (paymentType[paymentType.value - 1].label === '3 Month - 3 monthly cleanings' && numOfCans.value == '1') {
+                } else if (paymentType[paymentType.value - 1].label === '3 month - 3 monthly cleanings' && numOfCans.value == '1') {
                     price = 53.97;
                 } else if (paymentType[paymentType.value - 1].label === 'Seasonal - 9 total cleanings: 3 spring, 3 summer, 3 fall' && numOfCans.value == '1') {
                     price = 149.99;
@@ -40,12 +40,10 @@ $(document).ready(function() {
                 }   
                     
                 if (price && price > 0) {
-                    // Show  paragraph text
-                    console.log('show price');    
+                    // Show  paragraph text   
                     $('#li_29').show(); 
                     $('#li_29')[0].innerText = "Subtotal: $" + price.toFixed(2);
-                } else {
-                    console.log('hide');    
+                } else {  
                     $('#li_29').hide();
                 }
             } else {
