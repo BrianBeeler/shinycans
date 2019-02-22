@@ -17,7 +17,7 @@ $(document).ready(function() {
             numOfCans = $('#element_30');
 
             // Calc Subtitle
-
+            console.log('before price declaration');    
             let price;
 
             if (paymentType.value && numOfCans.value) {
@@ -40,12 +40,14 @@ $(document).ready(function() {
                 } else if (paymentType.value === 'Seasonal - 9 total cleanings: 3 spring, 3 summer, 3 fall' && numOfCans.value === '3') {
                     price = 199.99;
                 }   
-                    
+                console.log('before if price, price');    
                 if (price && price > 0) {
                     // Show  paragraph text
+                    console.log('show price');    
                     $('#li_29').show(); 
                     $('#li_29')[0].innerText = "Subtotal: $" + price.toFixed(2);
                 } else {
+                    console.log('hide');    
                     $('#li_29').hide();
                 }
             } else {
