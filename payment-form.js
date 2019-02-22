@@ -1,23 +1,19 @@
 
     $(document).ready(function() {
         let paymentType = $('#element_26');
-        let serviceType = $('#element_27');
-        let numOfCans = $('#element_28');
+        let numOfCans = $('#element_30');
 
         paymentType.onselect = setSubtotal;
-        serviceType.onselect = setSubtotal;
         numOfCans.onselect = setSubtotal;
         
         // Hide the country select
-        console.log($('#element_4_6'));
         $('#li_4_span_6').hide();
         setSubtotal();
         
         function setSubtotal() {
 
             paymentType = $('#element_26');
-            serviceType = $('#element_27');
-            numOfCans = $('#element_28');
+            numOfCans = $('#element_30');
 
             // Calc Subtitle
 
