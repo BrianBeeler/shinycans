@@ -16,9 +16,7 @@ $(document).ready(function() {
             paymentType = ($('#element_26') && $('#element_26')[0]) ? $('#element_26')[0] : {};
             numOfCans = ($('#element_30') && $('#element_30')[0]) ? $('#element_30')[0] : {};           
     
-            let price;
-                
-            debugger;    
+            let price;  
                 
             if (paymentType.value && numOfCans.value) {
                 if (paymentType[paymentType.value -1 ].label === 'Annual - 12 monthly cleanings' && numOfCans.value == '1') {
