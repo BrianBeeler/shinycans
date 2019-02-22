@@ -17,7 +17,9 @@ $(document).ready(function() {
             numOfCans = ($('#element_30') && $('#element_30')[0]) ? $('#element_30')[0] : {};           
     
             let price;
-
+                
+            debugger;    
+                
             if (paymentType.value && numOfCans.value) {
                 if (paymentType[paymentType.value -1 ].label === 'Annual - 12 monthly cleanings' && numOfCans.value == '0') {
                     price = 129.99;
