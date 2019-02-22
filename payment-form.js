@@ -8,7 +8,7 @@ $(document).ready(function() {
         paymentType.change(setSubtotal);
         numOfCans.change(setSubtotal);
         
-         $('#li_29').hide();
+         $('#li_33').hide();
          $('#li_4_span_6').hide();
         
         function setSubtotal() {
@@ -41,13 +41,14 @@ $(document).ready(function() {
                     
                 if (price && price > 0) {
                     // Show  paragraph text   
-                    $('#li_29').show(); 
-                    $('#li_29')[0].value = "$" + price.toFixed(2);
+                    $('#li_33').show();
+                        debugger;
+                    $('#li_33')[0].value = "$" + price.toFixed(2);
                 } else {  
-                    $('#li_29').hide();
+                    $('#li_33').hide();
                 }
             } else {
-                $('#li_29').hide();            
+                $('#li_33').hide();            
             }    
         }
     });
