@@ -13,8 +13,8 @@ $(document).ready(function() {
         
         function setSubtotal() {
             
-            paymentType = $('#element_26');
-            numOfCans = $('#element_30');
+            paymentType = ($('#element_26') && $('#element_26')[0]) ? $('#element_26')[0] : {};
+            numOfCans = ($('#element_30') && $('#element_30')[0]) ? $('#element_26')[0] : {};           
 
             // Calc Subtitle
             console.log('before price declaration', paymentType, numOfCans);    
