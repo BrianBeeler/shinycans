@@ -17,7 +17,7 @@ $(document).ready(function() {
             numOfCans = $('#element_30');
 
             // Calc Subtitle
-            console.log('before price declaration');    
+            console.log('before price declaration', paymentType, numOfCans);    
             let price;
 
             if (paymentType.value && numOfCans.value) {
