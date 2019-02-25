@@ -44,6 +44,7 @@ $(document).ready(function() {
                     // Show  paragraph text   
                     $('#element_33').show();
                     $('#element_33')[0].value = "$" + price.toFixed(2);
+                    $('#element_34')[0].value = price.toFixed(2);    
                 } else {  
                     $('#element_33').hide();
                 }
