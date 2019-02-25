@@ -10,6 +10,7 @@ $(document).ready(function() {
         
          $('#element_33').hide();
          $('#li_4_span_6').hide();
+         $('#element_34').hide(); 
         
         function setSubtotal() {
             
