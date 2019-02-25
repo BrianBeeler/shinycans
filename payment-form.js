@@ -10,7 +10,16 @@ $(document).ready(function() {
         
          $('#element_33').hide();
          $('#li_4_span_6').hide();
-         $('#li_34').hide(); 
+         $('#li_34').hide();
+        
+        
+        function setHiddenSubtotal(price, element) {
+                for (let i = 0; i < element.options.length; i++) {
+                 if (element.options[i] == price) {
+                         console.log("value set as ", i);
+                         element.value = i + 1;
+                }
+        }
         
         function setSubtotal() {
             
@@ -44,7 +53,7 @@ $(document).ready(function() {
                     // Show  paragraph text   
                     $('#element_33').show();
                     $('#element_33')[0].value = "$" + price.toFixed(2);
-                    $('#element_34')[0].value = price.toFixed(2);    
+                    setHiddenSubtotal(price.toFixed(2), $('#element_34')[0]);  
                 } else {  
                     $('#element_33').hide();
                 }
