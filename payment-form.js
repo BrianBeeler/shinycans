@@ -22,7 +22,7 @@ $(document).ready(function() {
                 }       
         }
         
-        function setHiddenSubtotal() {
+        function setSubtotal() {
             
             paymentType = ($('#element_35') && $('#element_35')[0]) ? $('#element_35')[0] : {};
             numOfCans = ($('#element_30') && $('#element_30')[0]) ? $('#element_30')[0] : {};           
