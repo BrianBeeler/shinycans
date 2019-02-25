@@ -20,7 +20,7 @@ $(document).ready(function() {
                          console.log("value set as ", i + 1);
                          element.value = i + 1;
                         
-                         console.log("Price is "+element[element.value]);
+                         console.log("Price is "+element[element.value].label);
                          
                 }
                 }       
