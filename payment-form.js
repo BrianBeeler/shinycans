@@ -18,7 +18,8 @@ $(document).ready(function() {
                    if ($(this).text() == price) {
                      $(this).attr('selected', true);        
                    } else {
-                     $(this).attr('selected', false);      
+                     $(this).attr('selected', false);
+                   }
                 });
         }
  
