@@ -10,11 +10,12 @@ $(document).ready(function() {
         
          $('#element_33').hide();
          $('#li_4_span_6').hide();
-         $('#li_34').hide();
+//          $('#li_34').hide();
         
         
         function setHiddenSubtotal(price, element) {
-                $('$element_34 option[value="'+price+'"]').prop('selected');
+                console.log('updated');
+                $('$element_34 option[value='+price+']').prop('selected');
         }
         
         function setSubtotal() {
