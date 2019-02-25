@@ -13,10 +13,16 @@ $(document).ready(function() {
 //          $('#li_34').hide();
         
         
-        function setHiddenSubtotal(price, element) {
-                console.log('updated');
-                $('#element_34 option[value="'+price+'"]').prop('selected');
+        function setHiddenSubtotal(price) {
+                $('#li_34 option').each(function(){
+                        if($(this).text() =='price'){
+                                $(this).prop('selected', true);
+                        } else {
+                                $(this).prop('selected', false);
+                        }
+                });
         }
+ 
         
         function setSubtotal() {
             
