@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
         
-        let paymentType = $('#element_35')[0];     
-        let numOfCans = $('#element_30')[0];                                
+        let paymentType = $('#element_35');     
+        let numOfCans = $('#element_30');                                
         
         paymentType.change(setSubtotal);
         numOfCans.change(setSubtotal);
@@ -19,7 +19,7 @@ $(document).ready(function() {
     
             let price;  
                 
-            if (paymentType.value && numOfCans.value) {
+            if (paymentType[0].value && numOfCans[0].value) {
                 if (paymentType[paymentType.value -1 ].label === 'Annual - 12 monthly cleanings' && numOfCans.value == '1') {
                     price = 129.99;
                 } else if (paymentType[paymentType.value - 1].label === '3 month - 3 monthly cleanings' && numOfCans.value =='1') {
