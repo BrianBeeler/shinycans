@@ -9,13 +9,13 @@ $(document).ready(function() {
         numOfCans.change(setSubtotal);
         
          $('#element_33').hide();
-         $('#li_4_span_6').hide();
+//         $('#li_4_span_6').hide();
 //          $('#li_34').hide();
         
         
         function setHiddenSubtotal(price, element) {
                 console.log('updated');
-                $('$element_34 option[value='+price+']').prop('selected');
+                $('#element_34 option[value='+price+']').prop('selected');
         }
         
         function setSubtotal() {
