@@ -17,8 +17,8 @@ $(document).ready(function() {
                 debugger;
                 for (let i = 0; i < element.length; i++) {
                  if (element[i].label == price) {
-                         console.log("value set as ", i + 1);
-                         element.value = i + 1;
+                         console.log("value set as ", i);
+                         element.value = i;
                         
                          console.log("Price is "+element[element.value].label);
                          
