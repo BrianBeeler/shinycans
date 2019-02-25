@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
         
-        let paymentType = $('#element_26');     
+        let paymentType = $('#element_35');     
         let numOfCans = $('#element_30');                                
         
         paymentType.change(setSubtotal);
