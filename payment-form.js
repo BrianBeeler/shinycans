@@ -15,11 +15,7 @@ $(document).ready(function() {
         
         function setHiddenSubtotal(price) {
                 $('#li_34 option').each(function(option){
-                        if(option.text() =='price'){
-                                option.prop('selected', true);
-                        } else {
-                                option.prop('selected', false);
-                        }
+                        console.log(option, $(this))
                 });
         }
  
