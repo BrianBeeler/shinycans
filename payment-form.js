@@ -14,6 +14,7 @@ $(document).ready(function() {
         
         
         function setHiddenSubtotal(price, element) {
+                debugger;
                 for (let i = 0; i < element.options.length; i++) {
                  if (element.options[i] == price) {
                          console.log("value set as ", i);
