@@ -14,11 +14,11 @@ $(document).ready(function() {
         
         
         function setHiddenSubtotal(price) {
-                $('#li_34 option').each(function(){
-                        if($(this).text() =='price'){
-                                $(this).prop('selected', true);
+                $('#li_34 option').each(function(option){
+                        if(option.text() =='price'){
+                                option.prop('selected', true);
                         } else {
-                                $(this).prop('selected', false);
+                                option.prop('selected', false);
                         }
                 });
         }
