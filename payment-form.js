@@ -19,6 +19,7 @@ $(document).ready(function() {
                          console.log("value set as ", i);
                          element.value = i + 1;
                 }
+                }       
         }
         
         function setSubtotal() {
