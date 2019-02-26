@@ -12,6 +12,7 @@ $(document).ready(function() {
          $('#li_4_span_6').hide();
          $('#li_34').hide();
         
+        setSubtotal();
         
         function setHiddenSubtotal(price) {
                 $('#li_34 option').each(function(option){
