@@ -18,6 +18,8 @@
             // Calc Subtitle
 
             let price;
+            
+            debugger;            
 
             if (paymentType.value && numOfCans.value) {
                 if (paymentType.value === 'Annual - 12 monthly cleanings' && numOfCans.value === '1') {
